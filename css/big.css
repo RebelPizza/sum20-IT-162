@@ -1,0 +1,177 @@
+/* My WEB120 Portal Website Styles */
+*{
+  margin: 0 auto;
+}
+
+/* body{
+  background-image: url("../images/woods.jpg");
+}
+
+img{
+  object-fit: scale-down;
+} */
+html {
+    clear: both;
+    overflow: auto;
+    font-family: 'Comfortaa';
+    font-size: 14px;
+    color:#797a7e;
+}
+
+main.wrapper {
+    background-color:#ffffff;
+    overflow:auto;
+    line-height: 2.5em;
+}
+
+header{
+    background-color: #000;
+    background-blend-mode: lighten;
+}
+h1>a {
+    font-family: 'Comfortaa';
+    font-weight: lighter;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    padding: 0.5em;
+    text-decoration: none;
+    color:#ffffff;
+    letter-spacing: 0.3em;
+}
+
+h2.PageID{
+  padding: 1em;
+  font-size: 20px;
+}
+
+h3{
+  color:#797a7e;
+  font-size: 18px;
+  padding: 0.3em;
+}
+
+.logo {
+    color:#ffffff;
+    margin-left:0.5%;
+    /* text-shadow:1px 1px #ccc; */
+    font-size:1em;
+    padding: 0.5em;
+}
+
+ul.section li{
+  line-height: 1em;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+}
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* End embed */
+
+/* Calendar RESPONSIVE */
+div.embed-container.month-view{
+  display: none;
+}
+
+footer {
+	clear:both;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+
+   main.wrapper {
+		width:80%;
+		margin:auto;
+	}
+
+    section {
+		width:75%;
+		float:left;
+	}
+
+     aside {
+       top:0;
+      padding:2%;
+   		width:25%;
+   		float:right;
+	}
+
+    img.desktop {
+      		float:left;
+       		width:50%;
+            display:inline-block;
+    }
+
+    img.tablet, img.phone {
+       	display:none;
+    	}
+
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        		background-color: #ccc;
+        		color:#797a7e;
+   	 }
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+
+	section {
+    padding: 3%;
+		width:60%;
+		float:left;
+	}
+
+	aside {
+    top:0;
+		width:25%;
+		float:right;
+    background-color: rgba(121, 122, 126, 0.1);
+	}
+
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: #ccc;
+        color:#797a7e;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+  h1{
+    font-size: 1em;
+  }
+
+  div.embed-container.week-view{
+    display: block;
+  }
+
+  div.embed-container.month-view{
+    display: none;
+  }
+}
